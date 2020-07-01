@@ -1,0 +1,62 @@
+<Panel ux:Class="ListPage">
+	<Router ux:Dependency="router" />
+
+	<DockPanel >
+		<CookMenu Dock="Bottom" />
+		<Rectangle ux:Name="topBack" Layer="Background" Color="color1" Width="400" Height="250" CornerRadius="75" Alignment="Top" />
+		<Panel ux:Name="topList" Dock="Top" Color="color1" Height="75">
+			<Hamburger Dock="Top" />
+			<ExBold ux:Name="COOKEAT" Value="COOKEAT LIST" Alignment="Center" Color="main" FontSize="20" />
+		</Panel>
+
+		<ScrollView >
+			<DockPanel>
+				<PageControl ux:Name="cards" >
+					<Each Items="{cards}">
+						<Card Name="{Name}" NamePic="{NamePic}" Cover="{cover}" Reviews="{Reviews}" Clicked="{gotoInfo}" />
+					</Each>
+				</PageControl>
+				<StackPanel Alignment="Center" X="150" Y="260" >
+					<PageIndicator Height="56" Navigation="cards">
+						<StackLayout ItemSpacing="12" Orientation="Horizontal" />
+						<Panel ux:Template="Dot" >
+							<DeactivatingAnimation>
+								<Scale Factor="1" />
+								<Change indicator.Opacity="0.4" />
+								<Change indicator.Color="#000"/>
+								<Rotate Degrees="360" />
+							</DeactivatingAnimation>
+							<Circle ux:Name="indicator" Width="12" Height="12" Color="main" >
+								<Rectangle Width="2" Height="7" Color="#fff" CornerRadius="1">
+									<Rotation Degrees="45" />
+								</Rectangle>
+							</Circle>
+						</Panel>
+					</PageIndicator>
+					
+					<StackPanel  Dock="Bottom" X="-150">
+						<Rectangle Width="350" Height="1" Color="sub" Opacity="0.2"/>
+						<StackPanel Margin="0,40,0,0">
+							<StackPanel Orientation="Horizontal" ItemSpacing="10">
+								<SemiBold Value="Popular" Margin="30,0,0,0" Alignment="Bottom" />
+								<ExBold Value="-" Alignment="Bottom" />
+								<Regular Value="18 Dishes" FontSize="13" Alignment="Bottom" />
+							</StackPanel>
+						<PopularBox />
+						</StackPanel>
+					</StackPanel>			
+					<BottomBarBackground />
+
+				</StackPanel>
+
+			</DockPanel>
+
+			<ScrollingAnimation >
+				<Change topList.Color="main"/>
+				<Change COOKEAT.Color="#fff"/>
+				<Change topBack.Opacity="0"/>
+			</ScrollingAnimation>
+
+		</ScrollView>
+	</DockPanel>
+</Panel>

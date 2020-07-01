@@ -1,0 +1,40 @@
+<Panel ux:Class="MapPage">
+	<Router ux:Dependency="router" />
+    <JavaScript>
+        module.exports = {
+            onPageLoaded : function(res) {
+                console.log("WebView arrived at "+ JSON.parse(res.json).url);
+            }
+        };
+    </JavaScript>
+    <DockPanel>
+    	<Panel Width="42" Height="42" Alignment="TopLeft" Margin="15" Clicked="{gotoLogin}">
+			<DockPanel>
+				<StackPanel Margin="0,9,0,0">
+				    <Rectangle Width="2" Height="15" Color="#fff" X="18" >
+				        <Rotation Degrees="45"/>
+				    </Rectangle>
+				    <Rectangle Width="2" Height="15" Color="#fff" X="18" Y="-5" >
+				        <Rotation Degrees="135"/>
+				    </Rectangle>
+				</StackPanel>
+				<Circle Color="main" />
+			</DockPanel>			
+		</Panel>
+
+        <NativeViewHost>
+            <WebView ux:Name="myweb1" Url="https://m.map.kakao.com/actions/searchView?q=%EA%B1%B4%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90/wxEnc=MMSUUM/wyEnc=OSRMQM/lvl=4/rcode=O82032010#!/11963424/map/place">
+                <PageLoaded>
+                    <EvaluateJS Handler="{onPageLoaded}">
+                        var result = {
+                            url : document.location.href
+                        };
+                        return result;
+                    </EvaluateJS>
+                </PageLoaded>
+            </WebView>
+        </NativeViewHost>
+
+        <BottomBarBackground Dock="Bottom" />
+    </DockPanel>
+</Panel>
