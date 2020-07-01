@@ -1,7 +1,7 @@
 # COOKEAT Fuse App Project
 
+
 <h2>App Concept<h2>
-  <hr>
   <h6> COOKEAT앱은 식문화 트랜드를 공유하는 어플이다. <br/>
     단순히 음식점을 통해 음식의 카테고리로 소개해주는 어플리케이션이 아닌, 자신만의 식사 유형에 적합한 <br/>
     맛집 리스트를 쉽고 편리하게 작성하고 관리할 수 있다. 가까운 지인들과 서로의 맛집 리스트를 간편하게 <br/>
@@ -30,4 +30,4 @@
   
   <h2>Detail<h2>
 <br/>
-  <a href="https://ljg960730.tistory.com/category/Mobile%20App/Fuse%20X">개인 블로그<a>
+  <h4 href="https://ljg960730.tistory.com/category/Mobile%20App/Fuse%20X">개인 블로그<h4>
