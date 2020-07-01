@@ -1,0 +1,49 @@
+<Panel ux:Class="DragToggle">
+    <JavaScript>
+        var isPressed = false;
+        
+        exports.onPressed = function ()
+        {
+            isPressed = true;
+        }
+        exports.onMoved = function ()
+        {
+            isPressed = false;
+        }
+        exports.onReleased = function ()
+        {
+            if(isPressed)
+            {
+                debug_log("Clicked");
+                isPressed = false;
+            }
+        }
+    </JavaScript>
+	
+	
+	<Rectangle Width="100" Color="#000" Alignment="Left" Clicked="{gotoSelect}" Opacity="0" />
+
+	<Rectangle Width="100" Color="#000" Alignment="Right" Clicked="{gotoQuestion}" Opacity="0" />
+
+    
+
+    
+
+    <Button Physics.IsPhysicsWorld="True" >
+        <Circle Width="70" Color="main" >
+            <Draggable Axis="X" />
+        </Circle>
+        <PointAttractor Radius="300" Strength="250" Exclusive="True" Offset="0,0,0"/>
+        <PointAttractor Radius="300" Strength="250" Exclusive="True" Offset="-120,0,0"/>
+        <PointAttractor Radius="300" Strength="250" Exclusive="True" Offset="120,0,0"/>
+    </Button>
+    <Circle Width="80" Color="#fff">
+        <DropShadow Distance="1" Spread="0.3" Size="15" Color="#00000018" Angle="90" />
+    </Circle>
+    <Direction />
+    <Image File="../Assets/left.png" Alignment="Left" Width="50" Height="50" Margin="25,0,0,0" Opacity="0.15"/>
+    <Image File="../Assets/right.png" Alignment="Right" Width="50" Height="50" Margin="0,0,25,0" Opacity="0.1"/>
+    <Image File="../Assets/right.png" Alignment="Right" Width="51" Height="51" Margin="0,0,25,0" Opacity="0.1"/>
+    <Image File="../Assets/right.png" Alignment="Right" Width="49" Height="49" Margin="0,0,26,0" Opacity="0.1"/>
+</Panel>
+

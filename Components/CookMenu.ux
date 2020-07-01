@@ -1,0 +1,11 @@
+<Panel ux:Class="CookMenu">
+
+	<DockPanel Background="#fff" Height="50">
+		<StackPanel Orientation="Horizontal" Margin="45,0,0,0" ItemSpacing="65">
+			<Icon.Home Width="20" Height="20" Color="#fff" IconColor="sub" Clicked="{gotoLogin}" /> 
+			<Icon.Map Width="20" Height="20" Color="#fff" IconColor="sub" Clicked="{gotoMap}"/>
+			<Icon.COOKEATList Width="20" Height="20" Color="#fff" IconColor="main" Clicked="{gotoList}"/>
+			<Icon.User Width="20" Height="20" Color="#fff" IconColor="sub" Clicked="{gotoUser}"/>
+		</StackPanel>
+	</DockPanel>
+</Panel>

@@ -1,0 +1,21 @@
+<Panel ux:Class="AddPage" >
+	<Router ux:Dependency="router" />
+	<Panel Width="42" Height="42" Alignment="TopLeft" Margin="15" Clicked="{gotoSelect}">
+		<DockPanel>
+			<StackPanel Margin="0,9,0,0">
+			    <Rectangle Width="2" Height="15" Color="#fff" X="18" >
+			        <Rotation Degrees="45"/>
+			    </Rectangle>
+			    <Rectangle Width="2" Height="15" Color="#fff" X="18" Y="-5" >
+			        <Rotation Degrees="135"/>
+			    </Rectangle>
+			</StackPanel>
+			<Circle Color="main" />
+		</DockPanel>			
+	</Panel>
+	<StackPanel Orientation="Horizontal" >
+		<Rectangle Color="Black" Width="150" Height="100" X="10" Y="550" Opacity="0" Clicked="{gotoSelect}"/>
+		<Rectangle Color="Black" Width="150" Height="100" X="50" Y="550" Opacity="0" Clicked="{gotoGameSelect}"/>
+	</StackPanel>
+	<Image File="../Assets/screen1.png" Y="-1"/>
+</Panel>
