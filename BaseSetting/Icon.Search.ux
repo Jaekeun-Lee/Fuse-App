@@ -1,0 +1,5 @@
+<Panel ux:Class="Icon.Search">
+	<Panel Width="100%" Height="100%" Alignment="Center" >
+		<Path Data="M 24 24 H 0 V 0 H 24 V 24 Z M 12 8.78 h 0 l 2.951 8.363 Z" Color="#fff" />
+	</Panel>
+</Panel>
