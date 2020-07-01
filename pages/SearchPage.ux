@@ -1,0 +1,22 @@
+<Panel ux:Class="SearchPage">
+	<Router ux:Dependency="router" />
+	<DockPanel>
+		<BackButton />
+
+		<StackPanel Margin="0,230,0,0" ItemSpacing="40">
+			<Bold Value="COOKEAT SEARCH" FontSize="20" Alignment="Center" Color="main" />
+			
+			<Panel>
+				<Panel Width="35" Height="35" X="280" Clicked="{gotoList}"  >
+					<Image Width="30" Height="30" File="../Assets/search.png" Alignment="Right" Color="color3" />
+				</Panel>
+				<Rectangle Width="296" Height="56" CornerRadius="30" Color="#fff"  >
+					<TextInput Margin="20,0,0,0" Alignment="Left" PlaceholderText="검색어를 입력해주세요. ex) 건양대 맛집" PlaceholderColor="Gray" TextColor="Black" CaretColor="Gray" FontSize="12" />
+				</Rectangle>
+				<Rectangle Width="300" Height="60" CornerRadius="30" Color="#ff2929" />
+
+			</Panel>
+		</StackPanel>
+
+	</DockPanel>
+</Panel>

@@ -1,0 +1,27 @@
+<Panel ux:Class="Fontlists">
+
+	<!-- NanumGothic.ttf -->
+	<Font File="../Assets/Fonts/NanumGothic-ExtraBold.ttf" ux:Global="NGExBold" />
+	<Font File="../Assets/Fonts/NanumGothic-Bold.ttf" ux:Global="NGBold" />
+	<Font File="../Assets/Fonts/NanumGothic-Regular.ttf" ux:Global="NGRegular" />
+
+	<!-- OpenSans.ttf -->
+	<Font File="../Assets/Fonts/OpenSans-ExtraBold.ttf" ux:Global="ExBold"/>
+	<Font File="../Assets/Fonts/OpenSans-SemiBold.ttf" ux:Global="SemiBold"/>
+	<Font File="../Assets/Fonts/OpenSans-Bold.ttf" ux:Global="Bold"/>
+	<Font File="../Assets/Fonts/OpenSans-Regular.ttf" ux:Global="Regular"/>
+	<Font File="../Assets/Fonts/OpenSans-Light.ttf" ux:Global="Light"/>
+
+	<!-- Font Class -->
+	<Text ux:Class="NGExBold" Font="NGExBold" />
+	<Text ux:Class="NGBold" Font="NGBold" />
+	<Text ux:Class="NGRegular" Font="NGRegular" />
+	<Text ux:Class="ExBold" Font="ExBold" />
+	<Text ux:Class="SemiBold" Font="SemiBold" />
+	<Text ux:Class="Bold" Font="Bold" />
+	<Text ux:Class="Regular" Font="Regular" />
+	<Text ux:Class="Light" Font="Light" />
+
+
+
+</Panel>

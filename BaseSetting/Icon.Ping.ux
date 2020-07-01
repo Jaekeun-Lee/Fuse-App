@@ -1,0 +1,12 @@
+<Panel ux:Class="Icon.Ping">
+
+	<float4 ux:Property="IconColor"/>
+	<Panel Width="100%" Height="100%" Alignment="Center" >
+		<Path Data="M 5.981 16.516 a 0.539 0.539 0 0 1 -0.4 -0.179 C 5.353 16.084 0 10.07 0 5.981 a 5.981 5.981 0 0 1 11.963 0 c 0 4.113 -5.353 10.1 -5.581 10.356 A 0.539 0.539 0 0 1 5.981 16.516 Z m 0 -13.544 a 3.01 3.01 0 1 0 3.01 3.01 A 3.013 3.013 0 0 0 5.981 2.972 Z" StretchMode="Fill" Width="100%" Height="100%" >
+			<SolidColor Color="{Read Property IconColor}" />
+		</Path>
+	</Panel>
+</Panel>
+
+
+

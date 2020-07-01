@@ -1,0 +1,44 @@
+<Panel ux:Class="Direction">
+    <Rectangle Width="2" Height="10" Color="color3" X="120" Y="94" >
+        <Rotation Degrees="35"/>
+    </Rectangle>
+    <Rectangle Width="2" Height="10" Color="color3" X="120" Y="102" >
+        <Rotation Degrees="145"/>
+    </Rectangle>
+
+    <Rectangle Width="2" Height="13" Color="color2" X="114" Y="91" >
+        <Rotation Degrees="35"/>
+    </Rectangle>
+    <Rectangle Width="2" Height="13" Color="color2" X="114" Y="101" >
+        <Rotation Degrees="145"/>
+    </Rectangle>
+
+    <Rectangle Width="2" Height="15" Color="color1" X="108" Y="89" >
+        <Rotation Degrees="35"/>
+    </Rectangle>
+    <Rectangle Width="2" Height="15" Color="color1" X="108" Y="101">
+        <Rotation Degrees="145"/>
+    </Rectangle>
+
+
+    <Rectangle Width="2" Height="10" Color="color3" X="226" Y="94">
+        <Rotation Degrees="145"/>
+    </Rectangle>
+    <Rectangle Width="2" Height="10" Color="color3" X="226" Y="102">
+        <Rotation Degrees="35"/>
+    </Rectangle>
+
+    <Rectangle Width="2" Height="13" Color="color2" X="232" Y="91">
+        <Rotation Degrees="145"/>
+    </Rectangle>
+    <Rectangle Width="2" Height="13" Color="color2" X="232" Y="101">
+        <Rotation Degrees="35"/>
+    </Rectangle>
+
+    <Rectangle Width="2" Height="15" Color="color1" X="238" Y="89">
+        <Rotation Degrees="145"/>
+    </Rectangle>
+    <Rectangle Width="2" Height="15" Color="color1" X="238" Y="101">
+        <Rotation Degrees="35"/>
+    </Rectangle>
+</Panel>

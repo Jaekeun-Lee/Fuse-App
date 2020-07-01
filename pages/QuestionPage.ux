@@ -1,0 +1,42 @@
+<Panel ux:Class="QuestionPage">
+	<Router ux:Dependency="router" />
+	<Panel Width="42" Height="42" Alignment="TopLeft" Margin="15" Clicked="{gotoLogin}">
+		<DockPanel>
+			<StackPanel Margin="0,9,0,0">
+			    <Rectangle Width="2" Height="15" Color="main" X="18" >
+			        <Rotation Degrees="45"/>
+			    </Rectangle>
+			    <Rectangle Width="2" Height="15" Color="main" X="18" Y="-5" >
+			        <Rotation Degrees="135"/>
+			    </Rectangle>
+			</StackPanel>
+			<Circle Color="#fff" />
+		</DockPanel>		
+	</Panel>
+	<StackPanel Margin="0,100,0,0" >
+		<ExBold Value="어디서 식사를 할 예정이신가요 ?" Color="sub" Alignment="Center" FontSize="23" />
+
+		<StackPanel Orientation="Horizontal" Alignment="Center" ItemSpacing="70" Margin="0,80,0,0">
+			<Circle Width="90" Height="90" Color="main" Clicked="{gotoQuestion2}">
+				<SemiBold Value="집" Color="#fff" Alignment="Center" FontSize="20"/>
+			</Circle>
+			<Circle Width="90" Height="90" Color="main" Clicked="{gotoQuestion2}">
+				<SemiBold Value="주변 식당" Color="#fff" Alignment="Center" FontSize="20"/>
+			</Circle>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Alignment="Center" ItemSpacing="70" Margin="0,80,0,0">
+			<Circle Width="90" Height="90" Color="main" Clicked="{gotoQuestion2}">
+				<SemiBold Value="야외" Color="#fff" Alignment="Center" FontSize="20"/>
+			</Circle>
+			<Circle Width="90" Height="90" Color="main" Clicked="{gotoQuestion2}">
+				<SemiBold Value="맛집 찾기" Color="#fff" Alignment="Center" FontSize="20"/>
+			</Circle>
+		</StackPanel>
+
+
+
+		<Circle Width="900" Height="900" Color="sub" Alignment="Top" Y="70"/>
+
+	</StackPanel>
+</Panel>

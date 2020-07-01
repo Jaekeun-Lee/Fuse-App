@@ -1,0 +1,14 @@
+<Panel ux:Class="PopularBox" >
+
+	<Rectangle ux:Class="Box" Width="370" Height="50" Color="#000"/>
+	<Rectangle ux:Class="Line" Width="370" Height="1" Color="color4"/>
+	
+	<StackPanel >
+		<Image File="../Assets/1.png" Width="400" Height="160" />
+		<Image File="../Assets/2.png" Width="400" Height="160" Y="-45"/>
+		<Image File="../Assets/3.png" Width="400" Height="160" Y="-90"/>
+		<Image File="../Assets/4.png" Width="400" Height="160" Y="-135"/>
+		<Image File="../Assets/5.png" Width="400" Height="160" Y="-180"/>
+		<Image File="../Assets/6.png" Width="400" Height="160" Y="-225"/>
+	</StackPanel>
+</Panel>
