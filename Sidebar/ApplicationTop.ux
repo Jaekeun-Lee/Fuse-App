@@ -1,0 +1,22 @@
+<DockPanel ux:Class="ApplicationTop">
+	<Router ux:Dependency="router"/>
+
+	<Panel ux:Name="hamburger" Width="42" Height="42" Alignment="TopLeft" Margin="15" Opacity="0">
+		<Panel Alignment="Left" Padding="5,0" HitTestMode="LocalBounds" Navigation="router">
+			<WhileCanGoBack>
+				<Text Value="&#xE5C4;" Alignment="Center"  FontSize="28"/>
+				<Clicked>
+					<GoBack/>
+				</Clicked>
+			</WhileCanGoBack>
+			<WhileCanGoBack Invert="true">
+				<Text Value="&#xE5D2;" Alignment="Center"  FontSize="28"/>
+				<Clicked>
+					<RaiseUserEvent EventName="requestMenu"/>
+				</Clicked>
+			</WhileCanGoBack>
+		</Panel>
+	</Panel>
+
+	<ResourceObject Key="hamburger" Value="hamburger"/>
+</DockPanel>
