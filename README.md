@@ -5,9 +5,11 @@
   <h6> COOKEAT앱은 식문화 트랜드를 공유하는 어플이다. <br/>
     단순히 음식점을 통해 음식의 카테고리로 소개해주는 어플리케이션이 아닌, 자신만의 식사 유형에 적합한 <br/>
     맛집 리스트를 쉽고 편리하게 작성하고 관리할 수 있다. 가까운 지인들과 서로의 맛집 리스트를 간편하게 <br/>
-    공유하며 서로의 취향에 더 가까운 식문화로 이끌어 주는 역할을 하는 어플을 구현하고자 하였다.<h6>
+    공유하며 서로의 취향에 더 가까운 식문화로 이끌어 주는 역할을 하는 어플을 구현하고자 하였다.<h6><br/>
   
-
+  <h2>Detail<h2>
+<br/>
+  <a href="https://ljg960730.tistory.com/category/Mobile%20App/Fuse%20X">개인 블로그<a>
 
 
 <h2>App Wireframe<h2>
@@ -28,6 +30,4 @@
   <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fb6vucs%2FbtqEVJezfwX%2F8gPLKAsxDC5WXDR1Z6HogK%2Fimg.png">
   
   
-  <h2>Detail<h2>
-<br/>
-  <h4 href="https://ljg960730.tistory.com/category/Mobile%20App/Fuse%20X">개인 블로그<h4>
+
