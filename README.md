@@ -7,10 +7,6 @@
     맛집 리스트를 쉽고 편리하게 작성하고 관리할 수 있다. 가까운 지인들과 서로의 맛집 리스트를 간편하게 <br/>
     공유하며 서로의 취향에 더 가까운 식문화로 이끌어 주는 역할을 하는 어플을 구현하고자 하였다.<h6><br/>
   
-  <h2>Detail<h2>
-<br/>
-  <a href="https://ljg960730.tistory.com/category/Mobile%20App/Fuse%20X">개인 블로그<a>
-
 
 <h2>App Wireframe<h2>
 <br/>
